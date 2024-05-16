@@ -13,7 +13,7 @@ const Edit = () => {
 
     data.problemId = id;
     const response = await fetch(
-      `http://localhost:1572/api/problems/editProblem`,
+      `https://code-blind-backend.onrender.com/api/problems/editProblem`,
       {
         method: "POST",
         headers: {
@@ -31,7 +31,7 @@ const Edit = () => {
   // get data by id
   const fetchData = async () => {
     const response = await fetch(
-      `http://localhost:1572/api/problems/getProblemByID`,
+      `https://code-blind-backend.onrender.com/api/problems/getProblemByID`,
       {
         method: "POST",
         headers: {
