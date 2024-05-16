@@ -51,7 +51,18 @@ const Home = () => {
   return (
     <div>
       {/* display heading in center */}
-
+      {/* on left corner logout button */}
+      <div className="text-left mt-4 ml-4">
+        <button
+          onClick={() => {
+            localStorage.removeItem("session");
+            navigate("/");
+          }}
+          className="px-4 py-2 text-white bg-red-500 rounded-lg"
+        >
+          Logout
+        </button>
+      </div>
       {/* on right corner add problem button */}
       <div className="text-right mt-4 mr-4">
         {isAdmin ? (
