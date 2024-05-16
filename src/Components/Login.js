@@ -12,7 +12,7 @@ const Login = () => {
 
     // fetch api and store the session in local storage
     const response = await fetch(
-      "http://localhost:1572/api/users/getUserByUsername",
+      "https://code-blind-backend.onrender.com/api/users/getUserByUsername",
       {
         method: "POST",
         headers: {

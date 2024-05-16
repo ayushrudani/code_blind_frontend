@@ -14,7 +14,9 @@ const Home = () => {
 
   // function to fetch the data
   const fetchData = async () => {
-    const response = await fetch("http://localhost:1572/api/problems");
+    const response = await fetch(
+      "https://code-blind-backend.onrender.com/api/problems"
+    );
     const data = await response.json();
     setData(data);
   };
@@ -26,7 +28,7 @@ const Home = () => {
       return;
     }
     const response = await fetch(
-      `http://localhost:1572/api/problems/deleteProblem`,
+      `https://code-blind-backend.onrender.com/api/problems/deleteProblem`,
       {
         method: "POST",
         body: JSON.stringify({

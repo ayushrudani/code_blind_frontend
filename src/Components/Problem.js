@@ -15,7 +15,7 @@ const Problem = () => {
   // function to fetch the data
   const fetchData = async () => {
     const response = await fetch(
-      `http://localhost:1572/api/problems/getProblemByID`,
+      `https://code-blind-backend.onrender.com/api/problems/getProblemByID`,
       {
         method: "POST",
         headers: {

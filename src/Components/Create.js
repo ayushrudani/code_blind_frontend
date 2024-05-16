@@ -52,7 +52,7 @@ const Create = () => {
 
     // fetch the api and store the data in the database
     const response = await fetch(
-      "http://localhost:1572/api/problems/createProblem",
+      "https://code-blind-backend.onrender.com/api/problems/createProblem",
       {
         method: "POST",
         headers: {
