@@ -51,7 +51,10 @@ const Problem = () => {
       <div className="flex flex-row space-x-4 mt-4">
         <div className={isAdmin ? "w-1/2" : "w-full"}>
           {/* description of the problem */}
-          <p className="my-2 text-gray-700">{data.desc}</p>
+          <p
+            className="my-2 text-gray-700"
+            dangerouslySetInnerHTML={{ __html: data.desc }}
+          ></p>
 
           {/* test cases */}
           <h3 className="text-lg font-semibold my-2">Test Cases</h3>
@@ -60,32 +63,62 @@ const Problem = () => {
 
             <h4 className="text-base font-semibold my-2">Case 1</h4>
             <div className="bg-gray-100 p-3 rounded-lg shadow-md w-[40%]">
-              <p className="text-gray-700">Input: {data.input_1}</p>
-              <p className="text-gray-700">Output: {data.output_1}</p>
+              <p className="text-gray-700">
+                Input:
+                <p dangerouslySetInnerHTML={{ __html: data.input_1 }}></p>
+              </p>
+              <p className="text-gray-700">
+                Output:
+                <p dangerouslySetInnerHTML={{ __html: data.output_1 }}></p>
+              </p>
             </div>
 
             <h4 className="text-base font-semibold my-2">Case 2</h4>
             <div className="bg-gray-100 p-3 rounded-lg shadow-md w-[40%]">
-              <p className="text-gray-700">Input: {data.input_2}</p>
-              <p className="text-gray-700">Output: {data.output_2}</p>
+              <p className="text-gray-700">
+                Input:
+                <p dangerouslySetInnerHTML={{ __html: data.input_2 }}></p>
+              </p>
+              <p className="text-gray-700">
+                Output:
+                <p dangerouslySetInnerHTML={{ __html: data.output_2 }}></p>
+              </p>
             </div>
 
             <h4 className="text-base font-semibold my-2">Case 3</h4>
             <div className="bg-gray-100 p-3 rounded-lg shadow-md w-[40%]">
-              <p className="text-gray-700">Input: {data.input_3}</p>
-              <p className="text-gray-700">Output: {data.output_3}</p>
+              <p className="text-gray-700">
+                Input:
+                <p dangerouslySetInnerHTML={{ __html: data.input_3 }}></p>
+              </p>
+              <p className="text-gray-700">
+                Output:
+                <p dangerouslySetInnerHTML={{ __html: data.output_3 }}></p>
+              </p>
             </div>
 
             <h4 className="text-base font-semibold my-2">Case 4</h4>
             <div className="bg-gray-100 p-3 rounded-lg shadow-md w-[40%]">
-              <p className="text-gray-700">Input: {data.input_4}</p>
-              <p className="text-gray-700">Output: {data.output_4}</p>
+              <p className="text-gray-700">
+                Input:
+                <p dangerouslySetInnerHTML={{ __html: data.input_4 }}></p>
+              </p>
+              <p className="text-gray-700">
+                Output:
+                <p dangerouslySetInnerHTML={{ __html: data.output_4 }}></p>
+              </p>
             </div>
 
             <h4 className="text-base font-semibold my-2">Case 5</h4>
             <div className="bg-gray-100 p-3 rounded-lg shadow-md w-[40%]">
-              <p className="text-gray-700">Input: {data.input_5}</p>
-              <p className="text-gray-700">Output: {data.output_5}</p>
+              <p className="text-gray-700">
+                Input:
+                <p dangerouslySetInnerHTML={{ __html: data.input_5 }}></p>
+              </p>
+              <p className="text-gray-700">
+                Output:
+                <p dangerouslySetInnerHTML={{ __html: data.output_5 }}></p>
+              </p>
             </div>
           </div>
         </div>
